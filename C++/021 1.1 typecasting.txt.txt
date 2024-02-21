@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    //cout<<2 + 3;
+
+    // char c = 'a';
+    // cout<<c + 3;
+
+    // cout<<c*3;
+
+    //cout<<'A' + 0;
+   // cout<<'d' + 0;
+
+
+   //char ch = 'A';
+  // cout<<ch + 1<<endl;
+
+   //ch = ch +1;
+   //cout<<ch<<endl;
+
+
+
+   //ch = ch + 10;
+   //cout<<ch<<endl;
+
+
+
+
+   char ch  = 'A';
+   int val = (int)ch;
+   cout<<val<<endl;
+
+
+   bool b = true;
+   int x = (int)b;
+   cout<<x<<endl;
+
+   int y = 70;
+   char abc = (char)y;
+   cout<<abc<<endl;
+
+
+
+    return 0;
+}

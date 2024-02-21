@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+   /*int a;
+   cin>>a;
+
+   if(a==1){
+    a = 0;
+   }
+
+    if(a==0){
+    a = 1;
+   }
+
+   cout<<a;
+   */
+
+
+   int a = 1;
+   if(6%2 && a++){
+
+        cout<<"In if "<<endl;
+        cout<<a<<endl;
+   }else{
+
+         cout<<"In else "<<endl;
+         cout<<a<<endl;
+
+   }
+
+
+
+
+
+
+    return 0;
+}

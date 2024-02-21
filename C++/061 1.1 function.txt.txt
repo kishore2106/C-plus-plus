@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+void printHello(){
+   cout<<"Hello"<<endl;
+}
+
+int add(int a,int b){
+
+   return (a+b);
+}
+
+int square(int a);
+
+int main(){
+
+    printHello();
+    // cout<<"World";
+
+      int c = add(2,3);
+      cout<<c<<endl;
+
+      cout<<square(10);
+
+    return 0;
+}
+
+int square(int a){
+   int ans = a*a;
+   return ans;
+}
+
+

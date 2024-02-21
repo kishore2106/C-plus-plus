@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+  int a = 50;
+  int *ptr = &a;
+  int *q = ptr;
+  (*q)++;
+  cout<<a<<endl;
+
+  cout<<&a<<endl;
+  cout<<ptr<<endl;
+  cout<<q<<endl;
+
+ return 0;
+}

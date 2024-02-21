@@ -1,0 +1,47 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+  /* while(true){
+    int i;
+   }    
+   while(true){
+    int *i = new int;
+   }
+   */
+
+   int *p = new int;  /// 8 bytes on stack , 4 bytes on heap
+   *p = 10;
+   cout<<p<<endl;
+   cout<<*p<<endl;
+
+   double *d = new double;
+   char *c = new char;
+
+  /// Largest element
+  int n;
+  cin>>n;
+  int *a = new int[n];  /// heap
+  for(int i=0;i<n;i++){
+    cin>>a[i];
+  }
+
+  int largest = -1;
+  for(int i=0;i<n;i++){
+    if(a[i] > largest){
+        largest = a[i];
+    }
+  }
+  cout<<largest<<endl;
+
+    int *p = new int;
+    delete p;
+    
+    p = new int;
+    delete p;   /// delete single element
+    
+    p = new int[50];
+    delete []p;   /// delete array syntax
+    
+   return 0;
+}

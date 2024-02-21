@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+     int fah;
+     //cin>>fah;
+
+     //int cel = (5/9)*(fah - 32);
+
+      //int cel = ((5)*(fah-32))/9;
+
+      int cel = (int)((5.0/9)*(fah-32));
+
+     //cout<<cel<<endl;
+
+    cout<<9/5<<endl;
+    cout<<9.0/5<<endl;
+    cout<<4/3<<endl;
+    cout<<5/9<<endl;
+
+
+    return 0;
+}

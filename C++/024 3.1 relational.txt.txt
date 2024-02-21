@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+   int i,j;
+   cin>>i>>j;
+
+   bool isEq = (i==j);
+   bool nEq  = (i!=j);
+   bool isgr = (i>j);
+   bool isgrEq = (i>=j);
+   bool isless  = (i<j);
+   bool islessEq = (i<=j);
+
+   cout<<"IS equal "<<isEq<<endl;
+   cout<<"IS NOT equal "<<nEq<<endl;
+   cout<<"IS greater "<<isgr<<endl;
+   cout<<"IS greater equal "<<isgrEq<<endl;
+   cout<<"IS less "<<isless<<endl;
+   cout<<"IS less equal "<<islessEq<<endl;
+
+
+   return 0;
+}

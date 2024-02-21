@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+   int i=10;
+   cout<<&i<<endl;
+
+   int * p = &i;
+
+   cout<<p<<endl;
+
+   cout<<sizeof(p)<<endl;
+   char c;
+   char * p2  = &c;
+   cout<<sizeof(p2)<<endl;
+
+
+   return 0;
+}

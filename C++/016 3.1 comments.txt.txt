@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+
+
+int main(){
+    
+
+   cout<<"Iron man is awesome";
+   cout<<endl;
+   cout<<"John cena is also awesome ";
+   cout<<endl;
+
+ //  Do not forget to write semicolon otherwise compiler will show us error
+
+ /*
+
+     fkjdbfld
+     bkdbs
+     bcb
+
+     */
+
+
+
+
+
+   return 0;
+}

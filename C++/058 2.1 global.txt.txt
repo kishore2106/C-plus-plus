@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+
+int x = 12;           /// global
+
+int main(){
+
+    //int x = 10;        /// local
+
+     x = 20;
+    cout<<x;
+
+   return 0;
+}

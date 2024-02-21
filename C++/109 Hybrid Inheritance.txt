@@ -1,0 +1,77 @@
+#include <iostream>
+using namespace std;
+
+class Vehicle {
+	private :
+		int maxSpeed;
+
+	protected :
+		int numTyres;
+
+	public :
+		string color;
+
+		/*Vehicle(){
+		   cout<<"Vehicle default constructor"<<endl;
+		}*/
+		Vehicle(int z){
+           cout<<"Vehicle parameterised constructor "<<z<<endl;
+		   maxSpeed = z;
+		}
+		void print(){
+            cout<<"Vehicle"<<endl;
+		}
+		~Vehicle(){
+		   cout<<"Vehicle destructor"<<endl;
+		}
+
+};
+
+class Car : virtual public Vehicle{
+   public:
+       int numGears;
+
+        /*Car(int x,int y): Vehicle(x) {
+         numGears = y;
+          cout<<"Car parameterised construtor"<<endl;
+        }*/
+        Car():Vehicle(3) {
+            cout<<"Car default constructor"<<endl;
+        }
+        ~Car(){
+           cout<<"Car destructor"<<endl;
+        }
+       void print(){
+           cout<<"Num Tyres : "<<numTyres<<endl;
+           cout<<"Color : "<<color<<endl;
+           cout<<"Num Gears :"<<numGears<<endl;
+          // cout<<"Max speed : "<<maxSpeed<endl;
+       }
+};
+
+
+class Truck : virtual public Vehicle{
+   public:
+       Truck():Vehicle(4){
+            cout<<"Truck constructor"<<endl;
+       }
+
+};
+
+class Bus : public Car, public Truck{
+    public:
+        Bus():Vehicle(5) {
+            cout<<"Bus Constructor"<<endl;
+        }
+        /*void print(){
+           cout<<"Bus"<<endl;
+        }*/
+};
+
+int main() {
+    Bus b;
+   // b.Car::print();
+
+	return 0;
+}
+

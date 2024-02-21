@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+int x = 10;
+
+int main(){
+
+  x = 12;
+  int x = 10;
+
+  int i;
+  for(i=0;i<5;i++){
+    x=i;
+    cout<<x<<"--"<<::x<<endl;
+  }
+
+  cout<<"value of x is "<<x<<endl;
+
+  ::x = ::x + 2;
+
+  cout<<"value of global x is "<<::x<<endl;
+  cout<<i<<endl;
+
+  return 0;
+
+}

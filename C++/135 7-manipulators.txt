@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+   cout<<oct<<163<<endl;
+    cout<<scientific<<25.3647<<endl;
+
+    cout<<"hello"<<endl;
+    cout<<setw(20)<<"hello"<<endl;
+    cout<<setw(10)<<"hello"<<endl;
+   return 0;
+}

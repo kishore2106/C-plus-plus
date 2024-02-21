@@ -1,0 +1,16 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+
+int main(){
+
+   ofstream ofs("myfile.txt",ios::app);
+
+   ofs<<"Lesnar"<<endl;
+   ofs<<30<<endl;
+   ofs<<"cse"<<endl;
+   
+   ofs.close();  /// imp
+
+   return 0;
+}

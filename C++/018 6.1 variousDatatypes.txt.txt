@@ -1,0 +1,71 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+  int i = 10;
+  cout<<"Value of variable i is "<<i<<endl;              // 10
+  cout<<"size of datatype int is "<<sizeof(i)<<endl;     // 4
+  //cout<<sizeof(int)<<endl;
+
+  cout<<"*******************************"<<endl;
+
+  short int s = 25;
+  cout<<"Value of variable s is "<<s<<endl;                            //25
+  cout<<"size of datatype short int is "<<sizeof(s)<<endl;             // 2
+ // cout<<sizeof(short int)<<endl;
+
+
+   cout<<"*******************************"<<endl;
+
+   long long int l = 30;
+   cout<<"Value of variable l is "<<l<<endl;                     // 30
+   cout<<"size of long long datatype is "<<sizeof(l)<<endl;     // 8
+  // cout<<sizeof(long long int)<<endl;
+
+
+   cout<<"*******************************"<<endl;
+
+   float f = 1.23;
+   cout<<"Value of variable f is "<<f<<endl;                        // 1.23
+   cout<<"size of float datatype is "<<sizeof(f)<<endl;              // 4
+  // cout<<sizeof(float)<<endl;
+
+
+   cout<<"*******************************"<<endl;
+
+   double d = 3.275;
+   cout<<"Value of variable d is "<<d<<endl;                       // 3.275
+   cout<<"Size of double datatype is "<<sizeof(d)<<endl;           //  8
+  // cout<<sizeof(double)<<endl;
+
+      cout<<"*******************************"<<endl;
+
+      char c = 'a';
+      cout<<"Value of variable c is "<<c<<endl;                  // a
+      cout<<"size of char datatype is "<<sizeof(c)<<endl;        // 1
+      //cout<<sizeof(char)<<endl;
+
+       cout<<"*******************************"<<endl;
+       bool b = false;
+       cout<<"Value of variable b is "<<b<<endl;
+       cout<<"size of bool datatype is "<<sizeof(b)<<endl;
+       //cout<<sizeof(bool)<<endl;
+
+       int j;
+       cout<<j<<endl;
+
+       float g;
+       cout<<g<<endl;
+
+       bool b2;
+       cout<<b2<<endl;
+
+
+       char c2;
+       cout<<c2<<endl;
+
+
+
+   return 0;
+}
