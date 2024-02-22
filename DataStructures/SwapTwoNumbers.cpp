@@ -8,15 +8,15 @@ int main(){
     cout<<m<<" "<<n<<endl;
 
     //swapping using third variable
-    // int temp;
-    // temp = m;
-    // m = n;
-    // n = temp;
+    int temp;
+    temp = m;
+    m = n;
+    n = temp;
 
     //Using Bitwise Operator XOR Swap Algorithm
-    // m = m^n;
-    // n = m^n;
-    // m = m^n;
+    m = m^n;
+    n = m^n;
+    m = m^n;
 
     //using inbuilt function
     swap(m,n);
