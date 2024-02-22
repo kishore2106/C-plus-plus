@@ -20,7 +20,7 @@ int main(){
     }
 
     //Printing in reverse order
-    for(int i=n-1;i>0;i--){
+    for(int i=n-1;i>=0;i--){
         cout<<arr[i]<<" ";
     }
 
