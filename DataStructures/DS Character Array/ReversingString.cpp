@@ -21,10 +21,10 @@ void reverse(char str[]){
 int main(){
 
     char str[100];
-    cin.getline(str,7);
+    cin.getline(str,100);
     cout<<"The entered string is : "<<str<<endl;
     reverse(str);
     cout<<"After reversing a string : "<<str<<endl;
-    
+
     return 0;
 }
