@@ -1,0 +1,11 @@
+{
+    "name":"LabNine",
+    "short_name":"L9",
+    "description":"API fetch using service worker",
+    "display":"standalone",
+    "start_url":"/",
+    "id":"/",
+    "orientation":"portrait-primary",
+    "background_color": "#AA0000",
+    "theme_color": "#CC0000"
+}
