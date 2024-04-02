@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean id="email" class="com.example.demo1.EmailMessage">
+   		<constructor-arg name="email" value="rvce.edu.in"/>
+   		<constructor-arg name="message" ref="message"/>
+   </bean>
+   
+   <bean id="message" class="com.example.demo1.Message" scope="prototype"
+   init-method="init" destroy-method="destroy">
+   
+   		<constructor-arg name="id" value="13"/>
+   		<constructor-arg name="message" value="Hello World"/>
+   </bean>
+
+</beans>

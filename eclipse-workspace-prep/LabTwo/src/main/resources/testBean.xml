@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+	<bean id="department" class="com.example.LabTwo.Department"
+		scope="prototype">
+		<constructor-arg name="college" ref="college"/>
+	</bean>
+	
+	<bean id="college" class="com.example.LabTwo.College" scope="singleton">
+		<property name="name" value="RV College of Engineering"/>
+		<property name="address" value="Mysuru Road, Bengaluru"/>
+	</bean>
+</beans>

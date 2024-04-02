@@ -1,0 +1,26 @@
+services:
+  myapp:
+    image: openjdk:17
+    environment:
+      - SPRING_APPLICATION_NAME=demoinContainer  # Set the Spring application name
+      - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/myappdb  # Set the database URL
+      - SPRING_DATASOURCE_USERNAME=myuser  # Set the database username
+      - SPRING_DATASOURCE_PASSWORD=mypassword  # Set the database password
+      - SPRING_DATASOURCE_DRIVER_CLASS_NAME=com.mysql.cj.jdbc.Driver  # Set the JDBC driver class
+
+    depends_on:
+      - db
+    ports:
+      - "8080:8080"
+    command: ["java", "-jar", "/app/demo1-0.0.1-SNAPSHOT.jar"]
+    volumes:
+      - .:/app  # Mount the host's target directory to the container's /app directory
+  db:
+    image: mysql
+    environment:
+      - MYSQL_DATABASE=myappdb
+      - MYSQL_USER=myuser
+      - MYSQL_PASSWORD=mypassword
+      - MYSQL_ROOT_PASSWORD=rootpassword
+    ports:
+      - "3307:3306"
