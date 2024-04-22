@@ -15,19 +15,18 @@ self.addEventListener("activate",(e)=>{
     console.log("activated");
 });
 
-self.addEventListener("fetch", (event) =>{
+self.addEventListener("fetch", e=>{
     console.log("fetched");
-    console.log(event.request);
-    event.responseWith(
-        caches.match(event.request).then(async (response)=>
-        {
+    console.log(e.request);
+    e.respondWith(
+        caches.match(e.request).then(async (response)=>{
             if(response){
                 return response;
             }
-            let data=fetch(event.request);
-            let dataClone=(await data).clone();
-            event.waitUntil(caches.open('gitdata').then((cache)=> cache.put(event.request,dataClone)));
-            return data;  
+            let data=await fetch(e.request);
+            let dataClone = (await data).clone();
+            e.waitUntil(caches.open('gitdata').then(cache=>cache.put(e.request,dataClone)));
+            return data;
         })
     )
 });

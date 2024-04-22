@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="manifest" href="manifest.json">
+    <script src="app.js"></script>
+</head>
+<body>
+    <p>git id : <input type="text" id="username"/></p>
+    <button onclick="gitdata()">get</button>
+    <div id="git_image">
+        <image src="" id="image" alt="Git Profile Pic"></image>
+        <p id="para"></p>
+    </div>
+
+    <script>
+        function gitdata(){
+            var url = "https://api.github.com/users/"+document.getElementById("username").value;
+            fetch(url)
+            .then(response=>{
+                if(!response.ok){
+                    throw new Error('Network response not ok');
+                }
+                return response.json();
+            })
+            .then(data=>{
+                console.log(data.avatar_url);
+                var im = document.getElementById("image");
+                im.setAttribute("src",data.avatar_url);
+                var gi = document.getElementById("para");
+                gi.innerHTML=JSON.stringify(data);
+            })
+            .catch(err=>console.log("Failed to fetch",err));
+        }
+    </script>
+</body>
+</html>
+
