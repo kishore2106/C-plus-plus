@@ -1,0 +1,2 @@
+kubectl create deployment lab4 --image=lab4 -r=3 --dry-run=client --port=8080 -o yaml > deployment.yaml
+kubectl create service nodeport lab4 --tcp=8080:8080 -o yaml

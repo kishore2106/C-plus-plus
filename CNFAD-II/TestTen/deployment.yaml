@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: lab4
+  name: lab4
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: lab4
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: lab4
+    spec:
+      containers:
+      - image: lab4
+        name: lab4
+        ports:
+        - containerPort: 8080
+        resources: {}
+status: {}
